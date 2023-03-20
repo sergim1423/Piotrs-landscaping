@@ -10,7 +10,6 @@ main{
 }
 h1{
     text-align: center;
-    color: green;
 }
 body{
     background-color: #5ca57e;
@@ -34,6 +33,49 @@ body{
 }
 .ipad-mower{
   display: none;
+}
+/* contains background images */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* welcome text, aligns top middle */
+.welcome{
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+}
+/* grab paragraph, aligns under welcome text */
+.hook{
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.5rem, 3vw, 2.7rem);
+}
+/* click here button  */
+.learn-more{
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  /* background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1ODAiIGhlaWdodD0iNDAwIj4KIDxnPgogIDx0aXRsZT5iYWNrZ3JvdW5kPC90aXRsZT4KICA8cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjM5OCIgd2lkdGg9IjU3OCIgeT0iLTEiIHg9Ii0xIi8+CiAgPGcgZGlzcGxheT0ibm9uZSIgb3ZlcmZsb3c9InZpc2libGUiIHk9IjAiIHg9IjAiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiIGlkPSJjYW52YXNHcmlkIj4KICAgPHJlY3QgZmlsbD0idXJsKCNncmlkcGF0dGVybikiIHN0cm9rZS13aWR0aD0iMCIgeT0iMCIgeD0iMCIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSIvPgogIDwvZz4KIDwvZz4KIDxnPgogIDx0aXRsZT5MYXllciAxPC90aXRsZT4KICA8cmVjdCBpZD0ic3ZnXzEiIGhlaWdodD0iMzk2IiB3aWR0aD0iNTc2IiB5PSIyIiB4PSIyIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2U9IiNjNWM1YzUiIGZpbGw9InRyYW5zcGFyZW50Ii8+CiA8L2c+Cjwvc3ZnPg=="); */
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 auto;
+  border: 5px rgba(102, 102, 102, 0.671);
+  border-radius: 35px;
+  padding: 20px 15px;
+  background-color: rgba(33, 33, 33, 0.671);
+  z-index: 0;
+  cursor: pointer;
+  color: whitesmoke;
 }
 /* Remove default margin */
 body,
@@ -102,13 +144,28 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* mobile view */
+/* mobile/ipad view */
 @media screen and (max-width: 750px) {
   .push-mower{
     display: none;
   }
   .mobile-mower{
+    display:none;
+  }
+  .mobile-mower2{
     display:block;
+  }
+}
+/* mobile view */
+@media screen and (max-width: 550px) {
+  .push-mower{
+    display: none;
+  }
+  .mobile-mower{
+    display:block;
+  }
+  .mobile-mower2{
+    display:none;
   }
 }
 /* i pad view */
@@ -122,6 +179,9 @@ select {
   .ipad-mower{
     display:block;
   }
+  .mobile-mower2{
+    display:none;
+  }
 }
 /* desktop view */
 @media screen and (min-width: 1480px) {
@@ -132,6 +192,9 @@ select {
     display:none;
   }
   .ipad-mower{
+    display:none;
+  }
+  .mobile-mower2{
     display:none;
   }
 }
