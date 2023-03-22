@@ -21,21 +21,57 @@
     <div class="top-space"></div>
 </header>
 <body>
-    <nav>
+  <nav>
     <div class="topnav" id="myTopnav">
-        <img src="/images/Logo Piotrs Landscaping.png" width="140" height="62" class="active">
+        <img src="/images/Logo Piotrs Landscaping.png" width="140" height="62" class="active" alt="Piotrs landscaping logo">
         <a href="/Pages/contact.html">CONTACT</a>
         <a href="/Pages/services.html">SERVICES</a>
         <a href="/Pages/about.html">ABOUT</a>
         <a href="/index.html" >HOME</a>
         <a href="javascript:void(0);" class="icon" onclick=myFunction()>
-          <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
         </a>
-      </div>
-</nav>
+    </div>
+  </nav>
 <main>
-  <div class="container">
-contact
+  <div>
+  <h1 style="color: whitesmoke;">Contact US</h1>
+  </div>
+  <div class="container1">
+  <div class="form">
+    <form action="/action.page.php">
+
+      <p class="fill-out">Please Fill Out The Form</p>
+      <div class="firstName">
+        <label for="fname">First Name</label>
+        <input type="text" class="fname" name="firstname" placeholder="Your name..">
+      </div>
+      <div class="lastName">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="emailAddress" placeholder="example@gmail.com">
+      </div>
+      <div class="phoneNumber">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" name="phonenumber" placeholder="(123)-456-7890">
+      </div>
+      <div class="address">
+        <label for="address"> Address</label>
+        <input type="text" id="address" name="Address" placeholder="123 Example street, Washington, DC, 01123">
+      </div>
+      <div class="description">
+        <label for="description">Description</label>
+        <input type="text" id="description" name="Description"
+          placeholder="I want trimming and mulch around my house. How much?">
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
   </div>
 </main>
 </body>

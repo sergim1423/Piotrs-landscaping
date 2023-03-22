@@ -77,6 +77,92 @@ body{
   cursor: pointer;
   color: whitesmoke;
 }
+form{
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-row-gap: 0px;
+  grid-column-gap: 10px;
+  padding: 5%;
+  border-radius: 15px;
+}
+.form{
+  padding: 10%;
+}
+input[type=submit]:hover {
+  background-color: #444744;
+}
+input[type=submit]{
+  background-color: #a1dcbdda;
+  width: 30%;
+  height: 40px;
+  border: #a1dcbdda;
+  border-radius: 15px;
+  color: whitesmoke;
+    
+}
+input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a1dcbdda;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #a1dcbdda;
+}
+label{
+  color: whitesmoke;
+}
+.fname{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.fill-out{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+  align-self: center;
+  color: whitesmoke;
+}
+.firstName{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: left;
+}
+.submit{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  text-align: center;  
+  border: 3px #a1dcbdda;
+  border-radius: 30px;
+  align-self: center;
+  /* width: auto;
+  height: 100%; */
+}
+.address{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.description{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
 /* Remove default margin */
 body,
 h1,
