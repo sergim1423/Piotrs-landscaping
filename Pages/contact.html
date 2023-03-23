@@ -1,4 +1,3 @@
-<?php include "sendmail.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +40,7 @@
   </div>
   <div class="container1">
   <div class="form">
-    <form action="/sendmail.php">
+    <form  name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
 
       <p class="fill-out">Please Fill Out The Form</p>
       <div class="firstName">
@@ -66,9 +65,10 @@
       </div>
       <div class="description">
         <label for="description">Description</label>
-        <input type="text" id="description" name="Description"
+        <textarea id="description" name="Description"
           placeholder="I want trimming and mulch around my house. How much?">
-      </div>
+          </textarea>
+        </div>
       <div class="submit">
         <input type="submit" value="Submit">
       </div>

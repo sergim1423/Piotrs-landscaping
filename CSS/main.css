@@ -102,6 +102,19 @@ input[type=submit]{
   color: whitesmoke;
     
 }
+textarea{
+  display:block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a1dcbdda;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #a1dcbdda;
+  color: whitesmoke;
+}
 input[type=text] {
   display: block;
   width: 100%;
