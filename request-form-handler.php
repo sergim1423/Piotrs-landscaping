@@ -1,12 +1,11 @@
 <?php
     if(isset($_POST['submit'])){
 
-        $firstName = $_POST['firstName'];
-        $lastName = $_POST['lastName'];
-        $phoneNumber = $_POST['phoneNumber'];
-        $emailFrom = $_POST['email'];
-        $rdb_value = $_POST['rdb'];
-        $emailSubject = "Request a Quote - Rising Sun Lawncare";
+        $firstName = $_POST['firstname'];
+        $lastName = $_POST['lastname'];
+        $phoneNumber = $_POST['phonenumber'];
+        $emailFrom = $_POST['emailAddress'];
+        $emailSubject = "Request a Quote - Piotrs Landscaping";
         $message = $_POST['message'];
     }
 
@@ -17,7 +16,7 @@
                 "Email Address: $email.\n".
                 "Details: $message.\n"; 
 
-    $to = "risingsunlawncare@hotmail.com";
+    $to = "sergi.m.1423@gmail.com";
     $headers = "From: $emailFrom \r\n";
     mail($to,$emailSubject,$emailBody,$headers);
 ?>
