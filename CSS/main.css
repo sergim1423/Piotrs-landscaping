@@ -87,6 +87,9 @@ form{
   padding: 5%;
   border-radius: 15px;
 }
+.captcha{
+  text-align: center;
+}
 .form{
   padding: 10%;
 }
@@ -113,7 +116,7 @@ textarea{
   margin-bottom: 16px;
   resize: vertical;
   background-color: #a1dcbdda;
-  color: whitesmoke;
+  color: black;
 }
 input[type=text] {
   display: block;
