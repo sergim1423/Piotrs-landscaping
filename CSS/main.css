@@ -87,9 +87,10 @@ form{
   padding: 5%;
   border-radius: 15px;
 }
-.captcha{
-  margin: auto;
-}
+.g-recaptcha div:first-child
+  {
+    margin: auto;
+  }
 .form{
   padding: 10%;
 }
