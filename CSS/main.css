@@ -91,12 +91,10 @@ form{
     align-self: center;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 8;
+    grid-row-start: 6;
 }
 .g-recaptcha div:first-child
   {
-    text-align: center;
-    align-self: center;
     margin: auto;
   }
 .form{
@@ -107,8 +105,8 @@ input[type=submit]:hover {
 }
 input[type=submit]{
   background-color: #a1dcbdda;
-  width: 30%;
-  height: 40px;
+  width: 50%;
+  height: 60px;
   border: #a1dcbdda;
   border-radius: 15px;
   color: whitesmoke;
@@ -167,8 +165,8 @@ label{
 .submit{
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 8;
   text-align: center;  
   border: 3px #a1dcbdda;
   border-radius: 30px;
