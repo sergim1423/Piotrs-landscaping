@@ -87,8 +87,12 @@ form{
   padding: 5%;
   border-radius: 15px;
 }
+.recaptch{
+  color: aqua;
+}
 .g-recaptcha div:first-child
   {
+    text-align: center;
     align-self: center;
     margin: auto;
   }
