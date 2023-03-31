@@ -89,6 +89,7 @@ form{
 }
 .g-recaptcha div:first-child
   {
+    align-self: center;
     margin: auto;
   }
 .form{
